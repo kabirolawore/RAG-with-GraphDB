@@ -142,7 +142,7 @@ def load_hospital_graph_from_csv() -> None:
         FROM '{EXAMPLE_CYPHER_CSV_PATH}' AS questions
         MERGE (Q:Question {{
                          question: questions.question,
-                         cypher: questions.cypher
+                         cypher: questions.ct ypher
                         }});
         """
         _ = session.run(query, {})
